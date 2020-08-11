@@ -1,0 +1,13 @@
+// BEM
+// BLOCK
+// ELEMNT __
+// MODIFIER --
+.spinner-container {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  
+    &__size {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
