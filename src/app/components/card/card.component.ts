@@ -8,7 +8,7 @@ import { Device } from 'src/app/models/device.model';
 })
 export class CardComponent implements OnInit {
 
-  private imgDefault = '../../../assets/carDefault.png';
+  private imgDefault = 'https://image.flaticon.com/icons/png/512/55/55283.png';
 
   @Input() device:Device;
 
