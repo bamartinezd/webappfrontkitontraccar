@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url_base: 'http://rastreo.kitongroup.com:8082/api'
+  url_base: 'https://3.12.33.43/api'
 };
 
 /*
