@@ -10,6 +10,7 @@ import { DevicesViewComponent } from './pages/devices-view/devices-view.componen
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { GoogleMapsModule } from "@angular/google-maps";
 import { MapComponent } from './components/map/map.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MapComponent } from './components/map/map.component';
     CardComponent,
     DevicesViewComponent,
     SpinnerComponent,
-    MapComponent
+    MapComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
