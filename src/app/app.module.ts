@@ -11,6 +11,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { GoogleMapsModule } from "@angular/google-maps";
 import { MapComponent } from './components/map/map.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ChartsModule } from "ng2-charts";
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { HomeComponent } from './pages/home/home.component';
     DevicesViewComponent,
     SpinnerComponent,
     MapComponent,
-    HomeComponent
+    HomeComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
