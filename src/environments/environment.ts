@@ -4,7 +4,10 @@
 
 export const environment = {
   production: false,
-  url_base: 'https://3.12.33.43/api'
+  //url_base: 'https://3.12.33.43/api'
+  url_base: 'https://rastreo.kitongroup.com/api',
+  auth_usr: 'brayan',
+  auth_pwd: '123456',
 };
 
 /*

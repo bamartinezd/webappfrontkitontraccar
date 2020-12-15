@@ -1,10 +1,18 @@
-<div class="card">
-    <img class="card-img-top" src="{{device.photo}}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{ device.name }}</h5>
-      <p class="card-text">{{ device.status }}</p>
-    </div>
-    <div class="card-footer">
+<div class="container-card">
+  <div class="container-card__image">
+    <img class="card-img-top" [src]="device.photo" [alt]="device.name">
+  </div>
+    
+  <div class="container-card__body">
+    <h5 class="card-title">{{ device.name }}</h5>
+    <p class="card-text">
+      <i *ngIf="device.status == 'online'" class="fas fa-lightbulb on"></i>
+      <i *ngIf="device.status != 'online'" class="fas fa-lightbulb off"></i>
+      {{device.status}}
+    </p>
+  </div>
+
+    <div class="container-card__footer">
       <small class="text-muted">{{ device.lastUpdate }}</small>
     </div>
 </div>

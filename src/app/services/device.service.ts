@@ -11,6 +11,8 @@ import { Device } from "../models/device.model";
 export class DeviceService {
   private API = "/devices";
   private URL_BASE = `${environment.url_base}`;
+  private AUTH_USR = environment.auth_usr;
+  private AUTH_PWD = environment.auth_pwd;
   
   constructor(private http: HttpClient) { }
 
@@ -20,7 +22,7 @@ export class DeviceService {
   public getDevices(): Observable<Device[]> {
     const httpOptions = {
       headers: new HttpHeaders({
-        Authorization: `Basic ${btoa('prueba:123456')}`
+        Authorization: `Basic ${btoa(`${this.AUTH_USR}:${this.AUTH_PWD}`)}`
       })
     };
 

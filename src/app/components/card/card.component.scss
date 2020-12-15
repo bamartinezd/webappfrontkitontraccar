@@ -1,4 +1,38 @@
-img{
-    max-height: 280px;
-    object-fit: contain;
+.container-card{
+    width: 90%;
+    height: 245px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 2px rgba($color: #616161, $alpha: 1.0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+
+    &__image{
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+    }
+
+    &__image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+
+}
+
+.container-card:active{
+    box-shadow: 0 2px 5px 2px rgba($color: #616161, $alpha: 1.0);
+}
+
+.on{
+    color: rgb(37, 199, 32);
+}
+
+.off{
+    color: rgb(228, 23, 23);
 }

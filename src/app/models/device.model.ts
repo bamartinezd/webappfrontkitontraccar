@@ -1,6 +1,7 @@
+import { Attributes } from "./attributes.model";
 export interface Device {
     id: number;
-    //attributes: Attributes;
+    attributes: Attributes;
     groupId: number;
     name: string;
     uniqueId: string;
@@ -15,4 +16,3 @@ export interface Device {
     category: string;
     disabled: boolean;
 }
-
