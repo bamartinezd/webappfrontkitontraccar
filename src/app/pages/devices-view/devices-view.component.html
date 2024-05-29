@@ -1,8 +1,0 @@
-<app-spinner *ngIf="isLoading"></app-spinner>
-
-<div *ngIf="!isLoading" class="card-group">
-    <app-card
-    *ngFor="let device of deviceItems"
-    [device] = "device"
-    class="card-device"></app-card>
-</div>
